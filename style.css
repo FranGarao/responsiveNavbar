@@ -1,0 +1,27 @@
+#nav{
+    inset: 0 0 0 0;
+    width: 100vw;
+    height: 20%;
+    position: fixed;
+    top: 0;
+    list-style: none;
+    background-color: #1c1c1c;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: all 500ms ease-out;
+    margin: 0;
+    z-index: 1;
+}
+
+
+#open {
+    z-index: 2;
+    position: relative;
+}
+    /* CSS 2  */
+
+#nav[data-visibility="true"] {
+    transform: translateY(0%);
+     opacity: 1;
+} 
